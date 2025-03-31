@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Lists, Images, Tables & Forms</title>
+  <!-- Google Font for improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Elements Showcase</h1>
+    <p class="tagline">Modern styling for lists, images, tables & forms</p>
+  </header>
+
+  <section class="content">
+    <article>
+      <h2>HTML Lists</h2>
+      
+      <div class="list-section">
+        <h3>Ordered List</h3>
+        <ol type="I" start="5">
+          <li>Software Engineer</li>
+          <li>Web Development</li>
+          <li>Python</li>
+          <li>Database</li>
+          <li>Startup Building</li>
+        </ol>
+      </div>
+
+      <div class="list-section">
+        <h3>Unordered List</h3>
+        <ul type="square">
+          <li>Mr. Chakin</li>
+          <li>Mr. Eddy</li>
+          <li>Miss Nelly</li>
+          <li>Miss Susan</li>
+          <li>Mr. Gerald</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h3>Definition List</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Hypertext Markup Language</dd>
+          <dt>SQL</dt>
+          <dd>Structured Query Language</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article>
+      <h2>HTML Image</h2>
+      <img src="https://images.pexels.com/photos/13003306/pexels-photo-13003306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+           alt="The black hacker" class="styled-image">
+    </article>
+
+    <article>
+      <h2>HTML Table</h2>
+      <table>
+        <caption>Instructor Information</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Duale</td>
+            <td>abdifarhan080@gmail.com</td>
+            <td>Kenya</td>
+          </tr>
+          <tr>
+            <td>Nuria</td>
+            <td>nuriaabdi@gmail.com</td>
+            <td>Kenya</td>
+          </tr>
+          <tr>
+            <td>Farhan</td>
+            <td>farhanabdi@gmail.com</td>
+            <td>Tanzania</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">End of Instructor List</td>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+
+    <article>
+      <h2>HTML Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <label class="radio-inline"><input type="radio" name="gender" value="Female"> Female</label>
+          <label class="radio-inline"><input type="radio" name="gender" value="Male"> Male</label>
+        </div>
+
+        <div class="form-group">
+          <label>Hobbies:</label>
+          <label class="checkbox-inline"><input type="checkbox" value="sports"> Sports</label>
+          <label class="checkbox-inline"><input type="checkbox" value="swimming"> Swimming</label>
+          <label class="checkbox-inline"><input type="checkbox" value="coding"> Coding</label>
+          <label class="checkbox-inline"><input type="checkbox" value="reading"> Reading</label>
+          <label class="checkbox-inline"><input type="checkbox" value="arts"> Arts</label>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country">
+            <option>-- Select Country --</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="somalia">Somalia</option>
+            <option value="uganda">Uganda</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Describe Yourself:</label>
+          <textarea id="description" placeholder="Tell us something about yourself"></textarea>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit">Register</button>
+          <button type="reset" class="cancel-btn">Cancel</button>
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
